@@ -1,0 +1,29 @@
+# MTL written from D:\3D\to Model\Robots Charm Concept\Robots Charm 1\RedRobot.obj
+newmtl Robot_0321
+Kd 0.8 0 0
+Ns 45.2548
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.145294 0.0388235 0.0388235
+newmtl Robot_0321_032Black
+Kd 0 0 0
+Ns 4096
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl Robot_0321_032Gray
+Kd 0 0 0
+Ns 4096
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl Robot_0321_032Steel
+Kd 0.331373 0.333922 0.384902
+Ns 45.2548
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.102353 0.102353 0.11

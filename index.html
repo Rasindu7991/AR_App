@@ -1,0 +1,43 @@
+<html>
+  IT17006644 - Dayasena B.R.D
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- include arjs script -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene arjs="debugUIEnabled: false;"> 
+
+    	<a-assets>
+		     <a-asset-item id="guitar" src="/UFO.obj"></a-asset-item>
+		     <a-asset-item id="guitar_mtl" src="/UFO.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="robo" src="/RedRobot.obj"></a-asset-item>
+        <a-asset-item id="robo_mtl" src="/RedRobot.mtl"></a-asset-item>
+     </a-assets>
+    
+     <!-- Preser marker -->
+    <a-marker preset='hiro'>
+      <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" scale="-1 .1 .1">
+          <a-entity obj-model="obj: #guitar; mtl: #guitar_mtl" position="0 0 -5" rotation="0 0 0" scale="10 13 22"></a-entity>
+      </a-entity>
+      <a-text value="Rs.5000/=" height="18" width="18" align="center" color="#87CEEB" position="0 -1 0">
+			<a-text value="INFINITY STORE \n -More of what you want-" color="#FF6347" height="18" width="18" align="center" position="0 -2 0">
+    </a-marker>
+    
+     <!-- pattern marker -->
+    <a-marker type='pattern' url='pattern-marker.patt'>
+          <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" scale="-1 .1 .1">
+              <a-entity obj-model="obj: #robo; mtl: #robo_mtl" position="0 0 -5" rotation="0 0 0" scale="0.4 0.8 2"></a-entity>
+          </a-entity>
+          <a-text value="Rs.8000/=" height="18" width="18" align="center" color="#87CEEB"  position="0 -1 0">
+          <a-text value="INFINITY STORE \n -More of what you want-" color="#FF6347" height="18" width="18" align="center" position="0 -2 0">
+    </a-marker>
+
+    	  <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
